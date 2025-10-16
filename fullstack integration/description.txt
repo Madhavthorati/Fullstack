@@ -1,0 +1,73 @@
+Title:
+
+Develop Real-Time Chat Application Using WebSocket Connections (Socket.io)
+
+Description:
+
+This experiment demonstrates how to build a real-time chat application using Socket.io with a Node.js backend and a React frontend. It shows how two or more users can communicate instantly without refreshing the page by establishing bi-directional WebSocket connections between the client and server.
+
+Steps to Perform:
+
+Setup Backend:
+
+Initialize a Node.js project using npm init -y.
+
+Install required packages:
+
+npm install express socket.io cors
+
+
+Create a server.js file and configure Express with Socket.io.
+
+Handle events like connection, send_message, and disconnect.
+
+Start the server on a specific port (e.g., 5000).
+
+Setup Frontend:
+
+Create a React app using Vite or Create React App.
+
+Install the Socket.io client library:
+
+npm install socket.io-client
+
+
+Connect to the backend server using io("http://localhost:5000").
+
+Build a simple chat interface with:
+
+Input field for name
+
+Input field for message
+
+Send button
+
+Message display area
+
+Implement Real-Time Communication:
+
+Emit the send_message event from the client when the user sends a message.
+
+Listen for receive_message on the client to display messages instantly.
+
+Test by opening multiple browser tabs and verifying that messages appear in real time.
+
+Run and Test:
+
+Start the backend: node server.js
+
+Run the frontend: npm run dev
+
+Open multiple tabs or browsers and send messages to confirm instant updates.
+
+Learning Outcomes:
+
+Understand how WebSockets enable real-time, two-way communication between server and clients.
+
+Learn to integrate Socket.io with Node.js and React for instant data updates.
+
+Gain practical knowledge of handling Socket.io events like connect, message, and disconnect.
+
+Build a functional real-time chat interface that updates without refreshing the page.
+
+Develop an understanding of how frontend and backend communicate asynchronously in modern web applications.
