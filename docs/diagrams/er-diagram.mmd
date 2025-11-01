@@ -1,0 +1,28 @@
+erDiagram
+  PRODUCT {
+    string _id PK "ObjectId"
+    string name
+    float price
+    string category "enum: electronics|clothing|books|other"
+  }
+
+  VARIANT {
+    string color
+    string size
+    int stock
+  }
+
+  STUDENT {
+    int id PK
+    string name
+    int age
+  }
+
+  SEAT {
+    int id PK
+    string status "available|locked|booked"
+    string lockedBy
+    datetime lockExpires
+  }
+
+  PRODUCT ||--o{ VARIANT : has

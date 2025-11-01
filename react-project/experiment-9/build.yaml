@@ -1,24 +1,27 @@
-name: Build React App (Experiment-7.2)
+name: Build React App (Experiment-3.1)
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'React-project/Experiment-7.2/**'
+      - 'React-Projects/Experiment-3.1/**'
   pull_request:
     branches:
       - main
     paths:
-      - 'React-project/Experiment-7.2/**'
-  workflow_dispatch:
+      - 'React-Projects/Experiment-3.1/**'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: React-project/Experiment-7.2
+        working-directory: React-Projects/Experiment-3.1
+
+      permissions:
+        contents: read
+        packages: write
         
     steps:
       # Step 1: Checkout code
